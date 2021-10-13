@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Website design with flexbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="learncss.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="learnjs.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-content commomlayout topnav" id="myTopnav">
+            <div class="header-content-left">
+                <img src="https://demo.glowlogix.com.pk/templates/covidy/images/logo.png" alt="">
+            </div>
+            <div class="header-content-between">
+                <ul class="header-content-between-content">
+                    <li class="header-content-between-content-li"><a href="#home" onclick="headercontentfunction()">Home</a></li>
+                    <li class="header-content-between-content-li"><a href="#about"> About</a></li>
+                    <li class="header-content-between-content-li"><a href="#symptoms">Symptoms</a></li>
+                    <li class="header-content-between-content-li"><a href="#covidspread"> Covid spread</a></li>
+                    <li class="header-content-between-content-li"><a href="#dodon't">Do,don't</a></li>
+                    <li class="header-content-between-content-li morelilist"><a href="#news">News</a>
+                        <div class="arrow-down">
+
+                        </div>
+                        <div class="header-content-between-morein4">
+                            <ul>
+                                <li class="content-herder-between-morein4">Blog Grid
+                                    <div class="border-morein4"></div>
+                                </li>
+                                <li class="content-herder-between-morein4">Blog Sidebar
+                                    <div class="border-morein4"></div>
+                                </li>
+                                <li class="content-herder-between-morein4">Blog Details</li>
+                            </ul>
+                        </div>
+                        <div class="header-content-between-content-connect">
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-btn">
+                <div class="header-content-right-content"> <i class="fas fa-phone-alt"></i> 111-333-555-77</div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="boder-bottom">
+
+        </div>
+    </div>
+    <!--BODY MAIN-->
+    <div class="bodyer commomlayoutbody">
+        <!--SECTION HOME-->
+        <section id="home" class="gohome">
+            <div class="gohome-left">
+                <p class="gohome-left-content1">Stay Home <br>Stay Safe</p>
+                <p class="gohome-left-content2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam<br> nonumy eirmod tempor invidunt.</p>
+                <button class="gohome-left-contentbtn content-btn">
+               ABOUT CORONA
+              
+            </button>
+
+            </div>
+            <div class="gohome-right goimagebody-effect">
+                <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/hero.png" alt="">
+            </div>
+
+        </section>
+        <!--SECTION NUMBER COVID-->
+        <div class="numbercovid">
+            <div class="numcovidetail">
+                <p>186</p>
+                <p>Affected Country</p>
+                <div class="numcovidetailgap"></div>
+            </div>
+
+            <div class="numcovidetail">
+                <p>2411875</p>
+                <p>Confirmed Cases</p>
+                <div class="numcovidetailgap"></div>
+            </div>
+
+            <div class="numcovidetail">
+                <p>155897</p>
+                <p>Recovered Cases</p>
+                <div class="numcovidetailgap"></div>
+            </div>
+
+            <div class="numcovidetail">
+                <p>10564</p>
+                <p>Worldwide Deaths</p>
+            </div>
+        </div>
+        <!--SECTION ABOUT-->
+        <section class="goabout" id="about">
+            <div class="goabout-left  goimagebody-effect">
+                <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/about.png" alt="">
+            </div>
+            <div class="goabout-right">
+                <p class="btn-body-header123">About Covid</p>
+                <p>What is Coronavirus?</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                    quia.
+                </p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                    quia.
+                </p>
+                <p class="content-btn">SEE SYMPTOMS</p>
+            </div>
+        </section>
+        <!--SECTION SYMPTOMS-->
+        <section class="gosymptoms" id="symptoms">
+            <div class="gosymptoms-left">
+                <p class="btn-body-header123 " style="max-width: 170px;">Covid Symptoms</p>
+                <p>What are symptoms?</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                <div class="gosymptoms-ul-li">
+                    <ul class="gosymptoms-ul-li1">
+                        <li>
+                            <i class="fas fa-check icon-style"></i>Headache
+                            <li>
+                                <i class="fas fa-check icon-style"></i>Fever
+                                <li>
+                                    <i class="fas fa-check icon-style"></i> Cough
+                                </li>
+                    </ul>
+                    <ul class="gosymptoms-ul-li2">
+                        <li>
+                            <i class="fas fa-check icon-style"></i>Breath shortness
+                            <li>
+                                <i class="fas fa-check icon-style"></i>Kidney Failure
+                                <li>
+                                    <i class="fas fa-check icon-style"></i>Sneeze</li>
+                    </ul>
+                </div>
+                <div class="content-btn">WHY COVID SPREAD</div>
+            </div>
+            <div class="gosymptoms-right goimagebody-effect">
+                <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/symptoms.png" alt="">
+            </div>
+        </section>
+        <!--SECTION COVID-THREAD-->
+        <section class="covid-thread">
+            <div class="btn-body-header123" style="max-width: 150px;">Covid Threat</div>
+            <p>Maximum amount of people die with Covid-19</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,<br> totam rem aperiam, eaque ipsa quae.</p>
+            <img class="goimagebody-effect" src="https://boring-galileo-5a5238.netlify.app/Covidy_files/world-map.png" alt="">
+        </section>
+        <!--SECTION GOCOVIDSPREAD-->
+        <section class="gocovidspread" id="covidspread">
+
+            <div class="gocovidspread-left">
+                <div class="gocovidspread-left-box">
+                    <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/personal-contact.png" alt="">
+                    <p>Personal Contact</p>
+                </div>
+                <div class="gocovidspread-left-box">
+                    <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/face-touch.png" alt="">
+                    <p>Face Touch</p>
+                </div>
+                <div class="gocovidspread-left-box">
+                    <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/people-crowd.png" alt="">
+                    <p>People sCrowd</p>
+                </div>
+                <div class="gocovidspread-left-box">
+                    <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/dry-cough.png
+               " alt="">
+                    <p>Dry Cough</p>
+                </div>
+            </div>
+            <div class="gocovidspread-right">
+                <p class="btn-body-header123">Covid Spread</p>
+                <p>How does coronavirus <br>spread?</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br>accusantium doloremque laudantium, totam rem aperiam, eaque ipsa <br>quae ab illo inventore veritatis.</p>
+                <div class="gocovidspread-right-ul-li">
+                    <ul>
+                        <li> <i class="fas fa-check icon-style"></i>But I must explain to you how all this mistaken idea.</li>
+                        <li> <i class="fas fa-check icon-style"></i>Zwei flinke Boxer jagen die quirlige Eva und ihren.</li>
+                        <li> <i class="fas fa-check icon-style"></i>Sed ut perspiciatis unde omnis iste natus error sit.</li>
+                    </ul>
+                </div>
+                <div class="content-btn">COVID PREVENTION</div>
+            </div>
+        </section>
+        <!--SECTION GODODONT't-->
+        <section class="gododont" id="dodon't">
+            <div class="gododont-header">
+                <p class="btn-body-header123" style="max-width: 200px;">Covid Prevention</p>
+                <p>Take steps to protect yourself</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+            </div>
+            <div class="gododont-body">
+                <div class="gododont-body-left">
+                    <p>What you <span>should do</span></p>
+                    <div class="gododont-body-box">
+                        <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/wear-face-mask.png" alt="">
+                        <ul>
+                            <li>Wear Face Mask</li>
+                            <li>Sed ut perspiciatis unde omnis iste natus error sit sed accusantium doloremque.</li>
+                        </ul>
+
+                    </div>
+                    <div class="gododont-body-box">
+                        <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/cover-face.png" alt="">
+                        <ul>
+                            <li>Cover Face When Coughing</li>
+                            <li>Sed ut perspiciatis unde omnis iste natus error sit sed accusantium doloremque.</li>
+                        </ul>
+
+                    </div>
+                    <div class="gododont-body-box">
+                        <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/wash-hand.png" alt="">
+                        <ul>
+                            <li>Wash Your Hand</li>
+                            <li>Sed ut perspiciatis unde omnis iste natus error sit sed accusantium doloremque.</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="gododont-body-right">
+                    <p>What you <span>shouldn't do</span></p>
+                    <div class="gododont-body-box">
+                        <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/avoid-animal-contact.png" alt="">
+                        <ul>
+                            <li>Wear Face Mask</li>
+                            <li>Sed ut perspiciatis unde omnis iste natus error sit sed accusantium doloremque.</li>
+                        </ul>
+
+                    </div>
+                    <div class="gododont-body-box">
+                        <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/avoid-hand-shake.png" alt="">
+                        <ul>
+                            <li>Cover Face When Coughing</li>
+                            <li>Sed ut perspiciatis unde omnis iste natus error sit sed accusantium doloremque.</li>
+                        </ul>
+
+                    </div>
+                    <div class="gododont-body-box">
+                        <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/short-distance.png
+                " alt="">
+                        <ul>
+                            <li>Short Distance</li>
+                            <li>Sed ut perspiciatis unde omnis iste natus error sit sed accusantium doloremque.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--SECTION NEWFEED-->
+        <section class="newdfeed">
+            <!-- same code gododont-header-->
+            <div class="gododont-header" style="padding-top: 0;">
+                <p class="btn-body-header123">News Feed</p>
+                <p>Stay updated with our news feed</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+            </div>
+            <div class="newfeed-image-plan">
+                <div class="newfeed-image-plan-in4">
+                    <div class="newfeed-image-plan-in4-hover">
+                        <p>13 March, 20</p>
+                        <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/01-news-feed.png" alt="">
+                    </div>
+
+                    <p class="btn-body-header123">Statistics</p>
+                    <p>Coronavirus, Social and Physical Distancing and Self Quarantine</p>
+                    <a href="#">Read More <i class="fa fa-angle-right"></i></a>
+                </div>
+                <div class="newfeed-image-plan-in4">
+                    <div class="newfeed-image-plan-in4-hover">
+                        <p>17 March, 20</p>
+                        <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/02-news-feed.png" alt="">
+                    </div>
+                    <p class="btn-body-header123">Vaccine</p>
+                    <p>How coronavirus vaccine will protect people from the covid in the whole world</p>
+                    <a href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                </div>
+                <div class="newfeed-image-plan-in4">
+                    <div class="newfeed-image-plan-in4-hover">
+                        <p>24 March, 20</p>
+                        <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/03-news-feed.png" alt="">
+                    </div>
+                    <p class="btn-body-header123">Protection</p>
+                    <p>Protect your family form covid and stay at home and do some exercise</p>
+                    <a href="#">Read More <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <!--SECTION TESTCOVID-->
+        <section class="testcovid">
+            <div class="test-covid-content">
+                <p class="test-covid-header">Want to test Covid?</p>
+                <p>Our goal at Our World in Data is to provide testing data over time for many countries around the world.</p>
+                <div class="testcovidbtn">
+                    <a href="#" class="testcovidbtn-css">
+                        <i class="fa fa-phone"> </i> CALL FOR TEST
+                    </a>
+                    <a href="" class="testcovidbtn-css">
+                        <i class="fa fa-calendar"></i> BOOK DOCTOR
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- section footer -->
+        <section class="footer">
+            <div class="footer-left">
+                <img src="https://demo.glowlogix.com.pk/templates/covidy/images/logo.png" alt="">
+                <p>This website is for health information and advice about coronavirus (COVID-19), how to prevent and protect yourself from disease.</p>
+                <p>Learn about the government response to coronavirus on covid.gov.pk</p>
+                <div class="footer-left-icon">
+                    <a href=""><i class="fab fa-facebook icon-style"></i></a>
+                    <a href=""><i class="fab fa-twitter icon-style"></i></a>
+                    <a href=""><i class="fab fa-linkedin icon-style"></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-right-list">
+                    <ul>
+                        <i class="fa fa-plus icon-style"></i>
+                        <div> Quick Links</div>
+                        <a href="#">Symptoms</a>
+                        <a href="#">Prevention</a>
+                        <a href="#">Protect Yourself</a>
+                        <a href="#">About Corona</a>
+                        <a href="#">FAQs</a>
+                    </ul>
+                </div>
+                <div class="footer-right-list">
+                    <ul>
+                        <i class="fa fa-plus icon-style"></i>
+                        <div>Helpful Links</div>
+                        <a href="#">WHO</a>
+                        <a href="#">Services</a>
+                        <a href="#">Worldwide Info</a>
+                        <a href="#">About Corona</a>
+                        <a href="#">FAQs</a>
+                    </ul>
+                </div>
+                <div class="footer-right-list">
+                    <ul>
+                        <i class="fa fa-plus icon-style"></i>
+                        <div>Importants Links</div>
+                        <a href="#">Symptoms</a>
+                        <a href="#">Prevention</a>
+                        <a href="#">Protect Yourself</a>
+                        <a href="#">About Corona</a>
+                        <a href="#">FAQs</a>
+                    </ul>
+                </div>
+                <div class="footer-right-list">
+                    <ul>
+                        <i class="fa fa-plus icon-style"></i>
+                        <div>Extended Links</div>
+                        <a href="#">WHO</a>
+                        <a href="#">Services</a>
+                        <a href="#">Worldwide Info</a>
+                        <a href="#">About Corona</a>
+                        <a href="#">FAQs</a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div class="boder-bottom123">
+
+    </div>
+    <div class="footer-end">
+
+        <div class="footer-end-left">
+            © 2020 by Glowlogix
+        </div>
+        <a href="#" class="footer-end-right">
+            Privacy Policy
+        </a>
+    </div>
+</body>
+
+</html>
